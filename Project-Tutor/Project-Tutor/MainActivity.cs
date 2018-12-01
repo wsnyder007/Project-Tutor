@@ -6,11 +6,15 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 
+using Project_Tutor.Data;
+using Project_Tutor.Model;
+
 namespace Project_Tutor
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
+        public User CurrentUser;
         TextView textMessage;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -18,7 +22,10 @@ namespace Project_Tutor
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            textMessage = FindViewById<TextView>(Resource.Id.message);
+            //textMessage = FindViewById<TextView>(Resource.Id.message);
+
+            DataConnection.Login("username", "password");
+
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
         }
