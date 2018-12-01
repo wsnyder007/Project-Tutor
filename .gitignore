@@ -4,3 +4,6 @@ Project-Tutor/.vs/Project-Tutor/v15/Server/sqlite3/db.lock
 Project-Tutor/.vs/Project-Tutor/v15/Server/sqlite3/storage.ide
 Project-Tutor/.vs/Project-Tutor/v15/Server/sqlite3/storage.ide-shm
 Project-Tutor/.vs/Project-Tutor/v15/Server/sqlite3/storage.ide-wal
+
+Project-Tutor/Project-Tutor/bin/
+Project-Tutor/Project-Tutor/obj/
